@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    	<declare-styleable name="TabPagerIndicator">
+		<attr name="tabItemStyle" format="reference"/>
+		<attr name="tabItemContentStyle" format="reference"/>
+		<attr name="tabItemTextStyle" format="reference"/>
+	</declare-styleable>
+</resources>
