@@ -1,5 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <style name="CustomWindowTitleBackground">
+        <item name="android:background">#323331</item>
+    </style>
+
+    <style name="CustomTheme" parent="android:Theme">
+        <item name="android:windowTitleSize">40dp</item>
+        <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+    </style>
     <!--
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
@@ -15,6 +24,84 @@
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="Widget.Twidere.ActionBar" parent="android:Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/ab_twidere_solid_color_holo</item>
+    </style>
+
+    <style name="Widget.Twidere.Light.TextView" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="Widget.Twidere.Light.CompoundButton.RadioButton" parent="android:Widget.Holo.Light.CompoundButton.RadioButton">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="Widget.Twidere.Light.CompoundButton.CheckBox" parent="android:Widget.Holo.Light.CompoundButton.CheckBox">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="Widget.TabPageIndicator.TabItem.Content" parent="@android:style/Widget">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Widget.TabPageIndicator.TabItem.TextView.Dark">
+        <item name="android:textColor">#fff3f3f3</item>
+    </style>
+
+    <style name="Widget.TabPageIndicator.TabItem.TextView.Light.DarkActionBar">
+        <item name="android:textColor">#fff3f3f3</item>
+    </style>
+
+    <style name="Widget.Twidere.ActionBar.Dark" parent="android:Widget.Holo.ActionBar">
+        <item name="android:background">@drawable/ab_twidere_transparent_dark_holo</item>
+    </style>
+
+    <style name="Widget.TabPageIndicator.TabItem" parent="@android:style/Widget">
+        <item name="android:background">@drawable/vpi__tab_indicator</item>
+    </style>
+
+    <style name="Widget.Twidere.TextView" parent="android:Widget.Holo.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="Widget.Twidere.CompoundButton.RadioButton" parent="android:Widget.Holo.CompoundButton.RadioButton">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="Widget.Twidere.CompoundButton.CheckBox" parent="android:Widget.Holo.CompoundButton.CheckBox">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="Widget.TabPageIndicator.TabItem.TextView" parent="@android:style/Widget.Holo.TextView">
+        <item name="android:textAppearance">@style/TextAppearance.TabPageIndicator</item>
+        <item name="android:textColor">#fff3f3f3</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="TextAppearance.TabPageIndicator" parent="@android:style/TextAppearance.Small" />
+
+    <style name="Widget.Twidere.ActionBar.Light" parent="android:Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:background">@drawable/ab_twidere_solid_light_holo</item>
+    </style>
+
+    <style name="Widget.TabPageIndicator.TabItem.TextView.Light">
+        <item name="android:textColor">#ff000000</item>
+    </style>
+
+    <style name="Widget.Twidere.ActionBar.Light.DarkActionBar" parent="android:Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/ab_twidere_solid_dark_holo</item>
     </style>
 
 </resources>
